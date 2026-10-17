@@ -9,7 +9,7 @@ const TrakingApp = async () => {
     console.log(Cards);
     return (
         <section className="max-w-7xl mx-auto px-4 py-8">
-            {/* Grid container with responsive columns and spacing */}
+            {/* Grid container */}
             <div className="mb-8 text-center">
                 <h1 className="text-5xl text-center font-bold bg-gradient-to-r from-red-500 via-green-500 to-blue-500 bg-clip-text text-transparent">
                     All Apps

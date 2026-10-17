@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-base-200/80 backdrop-blur-md border-t border-base-300 text-base-content pt-5 pb-4 transition-colors duration-300 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
-        {/* Top Grid Section: Reduced padding and gaps */}
+        {/* Top Grid Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 pb-4 border-b border-base-300/80 text-center md:text-left">
           
           {/* Brand Info */}

@@ -15,7 +15,7 @@ const TrakingCards = ({ Count }: CardProps) => {
                 🏆 #1 Top App
             </div>
 
-            {/* Header: Image, Title, Company Name */}
+            {/* Header */}
             <div className="flex items-center gap-4">
                 <Image
                     src={Count.image}
