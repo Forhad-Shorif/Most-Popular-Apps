@@ -1,15 +1,18 @@
-import React from 'react';
+import 'server-only';
+import fs from 'fs';
+import path from 'path';
 
 const DataFetch = async () => {
-   
-    const res = await fetch('/data.json');
+    try {
+        const filePath = path.join(process.cwd(), 'public', 'data.json');
+        
+        const fileContents = fs.readFileSync(filePath, 'utf8');
     
-    if (!res.ok) {
-        throw new Error('Failed to fetch data');
+        const jsonData = JSON.parse(fileContents);
+        return jsonData;
+    } catch (error) {
+        return []; 
     }
-
-    const jsonData = await res.json();
-    return jsonData;
 };
 
 export default DataFetch;
