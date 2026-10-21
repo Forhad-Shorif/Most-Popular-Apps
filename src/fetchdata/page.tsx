@@ -1,8 +1,14 @@
 import React from 'react';
 
 const DataFetch = async () => {
- const data = await fetch('http://localhost:3000/data.json');
-    const jsonData = await data.json();
+   
+    const res = await fetch('/data.json');
+    
+    if (!res.ok) {
+        throw new Error('Failed to fetch data');
+    }
+
+    const jsonData = await res.json();
     return jsonData;
 };
 
